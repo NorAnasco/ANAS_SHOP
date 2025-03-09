@@ -1,0 +1,209 @@
+/* Mise en page des produits*/
+.produits {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+/* Styles des cartes produits*/
+.produit {
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 9px;
+    box-shadow: 2px 2px 1px rgba(red, green, blue, alpha);
+    margin: 14px;
+    padding: 15 px;
+    text-align: center;
+    width: 250px;
+}
+
+.produit img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.produit h2 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.produit p {
+    font-size: 18px;
+    color: #333;
+}
+
+/* Style des bouton */
+.produit button {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.produit button:hover {
+    background-color: green;
+}
+
+#panier {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    background: #ff9800;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+#panier-details {
+    width: 80%;
+    margin: 20px auto;
+    padding: 15px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#panier-details ul {
+    list-style: none;
+    padding: 0;
+}
+
+#panier-details ul li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+#total {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Style général */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+/* Style du header */
+header {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+/* Style de la navigation */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+#vider-panier {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+#vider-panier:hover {
+    background-color: #c82333;
+}
+
+#passer-a-la-caisse {
+    background-color: #28a745; /* Couleur verte */
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+#passer-a-la-caisse:hover {
+    background-color: #218838; /* Couleur plus foncée au survol */
+}
+
+button {
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+nav a {
+    transition: color 0.3s, background-color 0.3s;
+}
+
+nav a:hover {
+    color: white;
+    background-color: #007bff; /* Couleur d'accent */
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+footer {
+    background-color: #343a40; /* Couleur de fond sombre */
+    color: white; /* Couleur du texte */
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1200px; /* Largeur maximale pour le contenu */
+    margin: 0 auto; /* Centrer le contenu */
+    padding: 0 20px; /* Espacement intérieur */
+}
+
+.footer-links,
+.social-media {
+    margin: 20px 0; /* Espacement entre les sections */
+}
+
+.footer-links ul {
+    list-style-type: none; /* Retirer les puces */
+    padding: 0; /* Retirer le remplissage */
+}
+
+.footer-links a,
+.social-media a {
+    color: white; /* Couleur des liens */
+    text-decoration: none; /* Retirer le soulignement */
+}
+
+.footer-links a:hover,
+.social-media a:hover {
+    text-decoration: underline; /* Souligner au survol */
+}
+
+.footer-bottom {
+    border-top: 1px solid #495057; /* Ligne de séparation */
+    padding-top: 10px;
+    font-size: 14px; /* Taille de police pour le bas du pied de page */
+}
